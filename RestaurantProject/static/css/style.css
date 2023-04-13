@@ -1,0 +1,394 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: #d9002b;
+    position: relative;
+    min-height: 100%;
+}
+/*General background*/
+#background-header {
+    width: 100%;
+    height: 139px;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #2d2d2d;
+    z-index: -1;
+    position: fixed;
+}
+/*General container*/
+#container {
+    width: 950px;
+    height: auto;
+    left: 50%;
+    margin-left: -475px;
+    position: relative;
+    z-index: 2;
+}
+#header {
+    width: 950px;
+    height: 139px;
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #2d2d2d;
+    left: 50%;
+    margin-left: -475px;
+    position: fixed;
+}
+#empty {
+    width: 950px;
+    height: 139px;
+    position: static;
+}
+#logo {
+    float: left;
+    width: 125px;
+    height: 125px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+p.slogan {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: expanded;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f3feff;
+    
+}
+#ul-header {
+    overflow: hidden;
+    list-style-type: none;
+    clear: right;
+    float: right;
+    padding: 0px 0px 0px 0px;
+    background-color: #650014;
+    border-radius: 15px;;
+    border-color: #650014;
+    opacity: 1;
+}
+#ul-header li {
+    float: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+#ul-header li a {
+    text-decoration: none;
+    list-style-position: inside;
+    display: block;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #ffffff;
+}
+#ul-header li:nth-child(1) {
+    border-right: 1px solid #2d2d2d;
+}
+#ul-header li:nth-child(2) {
+    border-right: 1px solid #2d2d2d;
+}
+#ul-header li:nth-child(3) {
+    border-right: 1px solid #2d2d2d;
+}
+#ul-header li:nth-child(4) {
+    border-right: 1px solid #2d2d2d;
+}
+#ul-header li:nth-child(5) {
+    border-right: 1px solid #2d2d2d;
+}
+#ul-header li:nth-child(6) {
+    border-right: 1px solid #2d2d2d;
+}
+#ul-header li a:hover {
+    background-color: #d9002b;
+    color: white;
+}
+.active {
+    text-decoration: none;
+    list-style-position: inside;
+    display: block;
+    text-align: center;
+    padding-right: 12px;
+    padding-left: 12px;
+    color: #5f324a;
+    background-color: #b12900; 
+}
+#background-restaurant {
+    width: 950px;
+    height: 631px;
+    left: 50%;
+    margin-left: -475px;
+    position: relative;
+    z-index: -1;
+}
+#restaurant {
+    width: 950px;
+    height: 631px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #FE7847;
+    color: #6c0a00;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+tr:nth-child(odd) {
+    color: #E6C01F;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 15px;
+}
+th {
+    width: 165px;
+    text-align: right;
+    padding: 0 13px;
+}
+td {
+    width: 165px;
+    text-align: right;
+    padding: 0 13px;
+}
+#contact {
+    overflow: hidden;
+    width: 854px;
+    height: 517px;
+    margin-left: 34px;
+    margin-top: 54px;
+    padding: 13px;
+    padding-bottom: 21px;
+    background-image: url("../img/Restaurant.png");
+    background-color: #D7BA81;
+    border: 1px solid #8d215c;
+}
+#contact-form {
+    float: left;
+    width: 283px;
+    height: auto;
+    margin-left: 24px;
+    margin-top: 21px;
+    position: absolute;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#contact-inf {
+    float: right;
+    width: 540px;
+    height: auto;
+    position: relative;
+}
+form {
+    width: 283px;
+    height: auto;
+}
+form input {
+    margin-top: 2px;
+    margin-bottom: 3px;
+    padding: 0px;
+}
+form textarea {
+    width: 281px;
+    height: 177px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    padding: 0px;
+    background-color: #DBCDC4;
+    border: 1px inset #A88C6A;
+    opacity: 0.85;
+}
+form input[type=text] {
+    width: 177px;
+    height: 22px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    background-color: #DBCDC4;
+    border: 1px inset #A88C6A;
+    opacity: 0.85;
+}
+form input[type=submit] {
+    width: 111px;
+    height: 26px;
+    margin-left: 91px;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: #D7BA81;
+    color: #3C2B22;
+    border: 2px groove #B52714;
+    opacity: 0.85;
+}
+#address {
+    float: left;
+    width: 178px;
+    height: 111px;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3C2B22;
+    opacity: 0.85;
+}
+
+#email {
+    float: left;
+    width: 178px;
+    height: 111px;
+    font-size: 14px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3C2B22;
+    opacity: 0.85;
+}
+
+#message {
+    width: 100%;
+    height: 100%;
+    opacity: 0.62;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 4;
+}
+#message-text {
+    top: 38%;
+    left: 50%;
+    margin-left: -100px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    position: relative;
+}
+.footer {
+    clear: both;
+    width: 950px;
+    height: auto;
+    color: white;
+    left: 50%;
+    margin-left: -475px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Georgia, serif;
+    position: relative;
+    border: 1px solid #341F29;
+}
+#background-footer {
+    width: 100%;
+    height: auto;
+    margin-top: 34px;
+    position: absolute;
+    bottom: 0px;
+    padding-top: 54px;
+    padding-bottom: 86px;
+    background-color: #341F29;
+    color: #F0DFFA;
+}
+#background-footer-hidden {
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+    margin-top: 34px;
+    position: relative;
+    padding-top: 54px;
+    padding-bottom: 86px;
+    background-color: #341F29;
+    color: #F0DFFA;
+}
+
+
+button{
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin: 5px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart{
+    background: #ffdd00;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    border: 2px solid black;
+}
+.cart i{
+    position: absolute;
+    margin-left: 45px;
+    column-fill: transparent;
+    transition: 200ms;
+    color: transparent;
+}
+.cart span{
+    transition: 200ms;
+}
+.cart:hover span{
+    margin-right: 30px;
+}
+.cart:hover i{
+    margin-left: 45px;
+    column-fill: white;
+    color: black;
+}
+button:focus{
+    outline: none;
+}
+
+#beside-contact {
+    float: right;
+  width: 540px;
+  height: auto;
+  position: relative;
+  margin-top: 21px;
+  margin-left: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#contact-form button[type="submit"] {
+    background-color: #d4c32b;
+    color: rgb(163, 27, 27);
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+#contact-form button[type="submit"]:hover {
+    background-color: #afaa17;
+}
+  
+a:hover img {
+    transform: scale(1.1);
+}
+
+.img_logo {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    margin: auto;
+}
+
+.img_logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.25);
+  }
+  
